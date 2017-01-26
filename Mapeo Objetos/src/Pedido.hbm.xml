@@ -13,7 +13,7 @@
 			<column name="FECHA" />
 		</property>
 	
-		 <list name="item" table="item">
+		 <list name="items" table="item">
 		
 			<key column="ID" />
 			<list-index column="Nombres">

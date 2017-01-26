@@ -8,7 +8,7 @@ public class Principal {
 		
 		session.beginTransaction();
 		
-		/*Pedido p = new Pedido();
+		Pedido p = new Pedido();
 		
 		p.getItems().add(new Item(1, "Galletas", 22));
 		p.getItems().add(new Item(2, "Jamones", 20));
@@ -19,11 +19,12 @@ public class Principal {
 		
 		session.getTransaction().commit();	
 		
+		Pedido p2=session.get(Pedido.class,1);
+		System.out.println("Hemos recuperado el pedido con ID:"+p2.getID());
 		
-		for(Item items:p.getItems()){
+		for(Item items:p2.getItems()){
 			System.out.println("Obtengo: "+items.getNombre()+" Cantidad: "+items.getCantidad());
-		}*/
-		session.getTransaction().commit();
+		}
 		session.close();
 		HibernateUtilities.getSessionFactory().close();
 

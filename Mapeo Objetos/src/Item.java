@@ -1,25 +1,25 @@
 
 public class Item {
 
-	//private int ID;
+	private int ID;
 	private String nombre;
 	private int cantidad;
 	
 	public Item(){
 		
 	}
-	public Item (String nombre, int cantidad) {
+	public Item (int ID,String nombre, int cantidad) {
 		
-		
+		this.ID=ID;
 		this.nombre = nombre;
 		this.cantidad = cantidad;
 	}
-/*	public int getID() {
+	public int getID() {
 		return ID;
 	}
 	public void setID(int iD) {
 		ID = iD;
-	}*/
+	}
 	public String getNombre() {
 		return nombre;
 	}
